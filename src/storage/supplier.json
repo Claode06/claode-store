@@ -1,0 +1,22 @@
+{
+  "supplier": [
+    {
+      "id": "1",
+      "name": "Santoso",
+      "address": "Jl. Sejahtera Medan",
+      "status": "1"
+    },
+    {
+      "id": "2",
+      "name": "Sintha",
+      "address": "Jl. Sekian Medan",
+      "status": "1"
+    },
+    {
+      "id": "3",
+      "name": "Jihan",
+      "address": "Jl. Sucipto Medan",
+      "status": "1"
+    }
+  ]
+}

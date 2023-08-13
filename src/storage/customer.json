@@ -1,0 +1,25 @@
+{
+  "customer": [
+    {
+      "id": "1",
+      "code": "CST001",
+      "name": "Susanti",
+      "member_id": "1",
+      "member": { "id": "1", "name": "Silver" }
+    },
+    {
+      "id": "2",
+      "code": "CST002",
+      "name": "Octavia",
+      "member_id": "2",
+      "member": { "id": "2", "name": "Gold" }
+    },
+    {
+      "id": "3",
+      "code": "CST003",
+      "name": "Santo",
+      "member_id": "3",
+      "member": { "id": "3", "name": "Platinum" }
+    }
+  ]
+}
