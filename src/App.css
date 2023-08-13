@@ -47,6 +47,15 @@ code {
   color: white;
 }
 
+.text-link{
+  text-decoration: none;
+  color: white;
+}
+
+.text-link:hover{
+  color: #FEBD01;
+}
+
 .bg-primary-blue{
   background-color: #2E6493;
 }
@@ -55,9 +64,74 @@ code {
   background-color: #FEBD01;
 }
 
+.text-yellow{
+  color: #FEBD01;
+}
+
 .menu-list{
   color: white;
 }
 .menu-list:hover{
   background-color: #FEBD01;
 }
+
+.custom-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.modal-dialog.custom-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .sidenav-responsif {
+    display: none;
+  }
+  .top-bar-navigation{
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) { 
+  .sidenav-responsif {
+    display: none;
+  }
+  .login-responsif{
+    width: 60%;
+  }
+  .top-bar-navigation{
+    display: flex;
+  }
+ }
+
+@media (min-width: 992px) { 
+  .sidenav-responsif {
+    display: block
+  }
+  .login-responsif{
+    width: 50%;
+  }
+  .top-bar-navigation{
+    display: none;
+  }
+ }
+
+@media (min-width: 1200px) { 
+  .sidenav-responsif {
+    display: block;
+  }
+  .login-responsif{
+    width: 50%;
+  }
+  .top-bar-navigation{
+    display: none;
+  }
+ }

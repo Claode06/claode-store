@@ -6,6 +6,10 @@ import LoginPage from "./pages/login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CustomerPage from "./pages/customer";
 import ProtectRoute from "./pages/protectedRoute";
+import CreateCustomer from "./pages/customer/create";
+import EditCustomer from "./pages/customer/edit";
+import CreateSupplier from "./pages/supplier/create";
+import EditSupplier from "./pages/supplier/edit";
 
 function App() {
   return (
@@ -20,6 +24,7 @@ function App() {
             </ProtectRoute>
           }
         />
+
         <Route
           path="/supplier"
           element={
@@ -29,10 +34,42 @@ function App() {
           }
         />
         <Route
+          path="/supplier/create"
+          element={
+            <ProtectRoute>
+              <CreateSupplier />
+            </ProtectRoute>
+          }
+        />
+        <Route
+          path="/supplier/edit/:id"
+          element={
+            <ProtectRoute>
+              <EditSupplier />
+            </ProtectRoute>
+          }
+        />
+        <Route
           path="/customer"
           element={
             <ProtectRoute>
               <CustomerPage />
+            </ProtectRoute>
+          }
+        />
+        <Route
+          path="/customer/create"
+          element={
+            <ProtectRoute>
+              <CreateCustomer />
+            </ProtectRoute>
+          }
+        />
+        <Route
+          path="/customer/edit/:id"
+          element={
+            <ProtectRoute>
+              <EditCustomer />
             </ProtectRoute>
           }
         />

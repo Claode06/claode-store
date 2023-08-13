@@ -6,10 +6,10 @@ const Layout = (props) => {
   const { children, title } = props;
   return (
     <div className="d-flex w-100">
-      <div className="w-25">
+      <div className="w-25 sidenav-responsif">
         <Sidenav />
       </div>
-      <div className="w-100 h-100">
+      <div className="w-100 h-100 ps-3">
         <TopBar title={title} />
         <div className="h-100 overflow-auto pb-3 pe-3">{children}</div>
       </div>

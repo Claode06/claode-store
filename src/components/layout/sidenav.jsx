@@ -5,7 +5,7 @@ const Sidenav = () => {
   const pathName = window.location.pathname;
 
   return (
-    <div className="sidenav-component p-3">
+    <div className="sidenav-component ps-3 py-3">
       <div className="bg-secondary-blue h-100 rounded rounded-xxl py-3 shadow-sm">
         <div className="px-2">
           <p className="fs-4 fw-semibold text-center py-2 text-white fw-bold bg-primary-blue px-1 rounded">

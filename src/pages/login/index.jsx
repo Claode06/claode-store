@@ -27,16 +27,16 @@ const LoginPage = () => {
 
   return (
     <div className="container-login">
-      <div className="login-form">
-        <p className="fs-2 text-center fw-semibold">Claode Store</p>
+      <div className="login-form login-responsif">
+        <p className="fs-2 text-center fw-bold ">CLAODE STORE</p>
         <form onSubmit={handleSubmit(handleLogin)}>
           <div class="form-floating mb-3">
             <input
               {...register("name")}
               type="email"
-              class="form-control"
+              className="form-control"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="Masukkan Username / Email . . ."
             />
             <label for="floatingInput">Email address</label>
           </div>
@@ -46,7 +46,7 @@ const LoginPage = () => {
               type="password"
               class="form-control"
               id="floatingPassword"
-              placeholder="Password"
+              placeholder="Masukkan Password . . ."
             />
             <label for="floatingPassword">Password</label>
           </div>
@@ -54,9 +54,9 @@ const LoginPage = () => {
             type="submit"
             onClick={handleSubmit(handleLogin)}
             variant="primary"
-            className="mt-4 w-100"
+            className="mt-4 py-2 fs-5 fw-semibold w-100"
           >
-            Login
+            LOGIN
           </Button>
         </form>
       </div>
